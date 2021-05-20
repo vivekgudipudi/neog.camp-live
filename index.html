@@ -24,36 +24,37 @@
     <h2>@container</h2>
 
     <h3>fluid container</h3>
-    <div>This is fluid container and it will go till the end of the page</div>
+    <div class="container">This is fluid container and it will go till the end of the page</div>
 
     <h3>centered container</h3>
-    <div>This is centered container and it will go till the specified width</div>
+    <div class="container container-center">This is centered container and it will go till the specified width</div>
     <hr>
     <h2>@links</h2>
 
 
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary Link</a>
+    <a class=" link link-primary" href="/">Primary Link</a>
+    <a class="link link-secondary" href="/">Secondary Link</a>
     <hr>
 
     <h2>@lists</h2>
 
     <h3>unordered list</h3>
-    <ul>
+    <p>this list will not have bullets</p>
+    <ul class="list-non-bullet">
         <li>Item one</li>
         <li>Item two</li>
         <li>Item three</li>
     </ul>
 
-    <ul>
-        <li>Inline Item one </li>
-        <li>Inline Item two </li>
-        <li>Inline Item three </li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">Inline Item one </li>
+        <li class="list-item-inline">Inline Item two </li>
+        <li class="list-item-inline">Inline Item three </li>
     </ul>
 
     <h3>reverse ordered list</h3>
 
-    <ol>
+    <ol reversed>
         <li>milk</li>
         <li>eggs</li>
         <li>bread</li>
@@ -62,17 +63,17 @@
 
     <h2>@nav</h2>
 
-    <nav>
-        <div>I'm Brand</div>
-        <ul>
-            <li>
-                <a href="/">home</a>
+    <nav class="navigation container">
+        <div class="nav-brand">I'm Brand</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">Home</a>
             </li>
-            <li>
-                <a href="/">products</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">Products</a>
             </li>
-            <li>
-                <a href="/">about</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">About</a>
             </li>
         </ul>
     </nav>
@@ -81,32 +82,39 @@
 
     <h2>@header</h2>
 
-    <header>
-        <img src="images/hero.svg" />
-        <h1>heading inside hero</h1>
+    <header class="hero">
+        <img class="hero-img" src="images/hero.svg" />
+        <h1 class="hero -heading">heading inside hero</h1>
     </header>
 
     <hr>
 
     <h2>@section</h2>
-    <section>
-        <h3>@white section</h3>
-        <p>This will have white background</p>
+    <section class="section">
+        <div class="container container-center">
+            <h1>@white section</h1>
+            <p>This will have white background</p>
+        </div>
     </section>
 
-    <section>
-        <h3>@off white section</h3>
-        <p>This will have grey background</p>
+    <section class="section ow">
+        <div class="container container-center">
+            <h1>@off white section</h1>
+            <p>This will have grey background</p>
+        </div>
     </section>
     <hr>
 
     <h2>@footer</h2>
-    <footer>
-        <div>Some small heading inside footer</div>
-        <ul>
-            <li>socialone</li>
-            <li>socialtwo</li>
-            <li>socialthree</li>
+    <footer class="footer">
+        <div class="footer-header">Some small heading inside footer</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline"><a  class="link" href="/">socialone</a>
+            </li>
+            <li class="list-item-inline"><a  class="link" href="/">socialtwo</a>
+            </li>
+            <li class="list-item-inline"><a class="link" href="/">socialthree</a>
+            </li>
         </ul>
     </footer>
 
